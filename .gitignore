@@ -1,0 +1,24 @@
+# Données (trop volumineuses, à télécharger depuis les sources officielles)
+data/
+datasets/
+*.csv
+*.parquet
+*.txt
+!requirements.txt
+
+# Modèles entraînés
+*.pth
+*.pt
+models/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.venv/
+venv/
+
+# Système
+.DS_Store
+Thumbs.db

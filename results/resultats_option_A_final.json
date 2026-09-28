@@ -1,0 +1,43 @@
+{
+  "configuration": "Option A — Backbone général sans IoT",
+  "phase1_backbone": {
+    "datasets_entraînement": [
+      "NSL-KDD",
+      "CICIDS2017",
+      "UNSW-NB15"
+    ],
+    "dataset_test_cross_domaine": "ToN-IoT (jamais vu)",
+    "volume_train": 856697,
+    "features": 64,
+    "classes": 9,
+    "variance_pca": 98.08999633789062,
+    "val_loss_final": 0.1186
+  },
+  "phase2_maml_v2": {
+    "episodes": 3000,
+    "n_way": 5,
+    "k_shot": 10,
+    "inner_steps": 10,
+    "alpha": 0.005,
+    "beta": 0.001,
+    "meilleure_acc": 92.08
+  },
+  "phase3_fewshot_global": {
+    "10_shot_acc": 87.07,
+    "10_shot_std": 6.69,
+    "20_shot_acc": 90.27,
+    "20_shot_std": 5.74
+  },
+  "phase3_cross_domaine_iot": {
+    "10_shot_acc": 44.0,
+    "10_shot_std": 7.07,
+    "20_shot_acc": 43.25,
+    "20_shot_std": 6.33
+  },
+  "phase3_cross_domaine_unsw": {
+    "10_shot_acc": 72.77,
+    "10_shot_std": 6.65,
+    "20_shot_acc": 73.65,
+    "20_shot_std": 5.59
+  }
+}
